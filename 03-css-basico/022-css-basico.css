@@ -1,0 +1,9 @@
+*{
+    margin: 0; /* quita el margen a todos los elementos del documento */
+}
+:not(p){
+    margin: 0; /* quita el margen a todos los elementos del documento salvo los de tipo <p> */
+}
+:not(.mitexto2){
+    margin: 0; /* quita el margen a todos los elementos del documento salvo a los de clase .mitexto2 */
+}

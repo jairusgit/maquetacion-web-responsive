@@ -1,0 +1,32 @@
+/*font-style */
+h1{
+    font-style: normal; /* texto normal */
+    font-style: italic; /* texto cursiva*/
+    font-style: oblique; /* similar a cursiva, menos soportado por los navegadores  */
+}
+
+/*font-size */
+h1{
+    font-size: 16px; /* (tamaño en pixels) */
+    font-size: 1em; /* (tamaño en em, que permite al usuario re-dimensionar la fuente desde el menú del navegador. 1em = 16px) */
+    font-size: 1rem; /* (tamaño en rem, relativos al elemento padre anterior) */
+}
+
+/*combinación de font-size */
+body{
+    font-size: 100%; /* (tamaño en porcentaje) */
+}
+h1{
+    font-size: 2.5em; /* (tamaño en pixels) */
+}
+
+/*responsive font-size (se adapta a los dispositivos) */
+h1{
+    font-size: 10vw /* (10% del ancho del viewport o ventana del navegador) */
+}
+
+/*font variant */
+p{
+    font-variant: small-caps; /* las minúsculas se convierten en mayúsculas pequeñas*/
+    font-variant: normal; /* texto normal*/
+}

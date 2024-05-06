@@ -1,0 +1,9 @@
+.div1{
+    border-radius: 15px 50px 30px 5px; /* 4 valores (superior izquierdo, superior derecho, inferior derecho, inferior izquierdo  */
+}
+.div2{
+    border-radius: 15px 50px; /* 2 valores (superior izquierdo e inferior derecho, superior derecho, e inferior izquierdo  */
+}
+.div3{
+    border-radius: 15px; /* 1 único valor para las 4 esquinas  */
+}

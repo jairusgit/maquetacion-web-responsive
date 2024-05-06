@@ -1,0 +1,14 @@
+div{
+    background-color: red; /* permite aplicar un color de fondo en cualquier formato de color aceptado (#000, rgb(255,0,0), rgba(255,0,0,0.1), etc.) */
+}
+
+div{
+    background-image: url("ruta-hasta-la-imagen/imagen.jpg"); /* Permite aplicar una imagen de fondo */
+    background-repeat: no-repeat; /* Indica si debemos repetir el fondo cuando el elemento sea más grande que la imagen. Las opciones más comunes son no-repeat, repeat (por defecto), repeat-x, repeat-y */
+    background-size: 100px 100px; /* permite establecer el tamaño de la imagen de fondo, también puede ser en porcentajes u otra medida */
+    background-position: 10px 50px; /* permite especificar la posición en la que debe empezar la imagen de fondo en forma de par de valores x e y */
+}
+
+div{
+    background: #00ff00 url("smiley.gif") no-repeat; /* Permite establecer varias propiedades de las anteriores de forma simultánea */
+}

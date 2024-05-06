@@ -1,0 +1,8 @@
+p{
+    color: Tomato;  /* Utilizando un color keyword. */
+    color: rgb(255, 99, 71);  /* Utilizando los valores RGB (red, green, blue entre 0 y 255). */
+    color: rgba(255, 99, 71, 0.5);  /* Como el anterior con una transparencia del 50%. */
+    color: #FF6347;  /* Utilizando el valor HEX (red, green, blue en hexadecimal entre 00 y FF). */
+    color: hsl(9, 100%, 64%);  /* Utilizando los valores HSL (hue o matiz en la rueda de color de 0 a 360, saturation o saturación de 0 a 100%, lightness o luminosidad de 0 a 100%). */
+    color: hsla(9, 100%, 64%, 0.5);  /* Como el anterior con una transparencia del 50%. */
+}

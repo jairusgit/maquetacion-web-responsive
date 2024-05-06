@@ -1,0 +1,14 @@
+/*forzar que todos los h1 utilicen su font-size por defecto */
+h1{
+    font-size: initial;
+}
+
+/*forzar que todos los h1 dentro de section utilicen el color de fuente declarado en la section */
+section h1{
+    color: inherit;
+}
+
+/*forzar que todos los h1 dentro de section tengan un color de fuente concreto, incluso cuando en otros lugares del CSS se haya escrito otra cosa */
+section h1{
+    color: red !important;
+}

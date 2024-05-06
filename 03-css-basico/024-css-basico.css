@@ -1,0 +1,21 @@
+/* permite añadir contenido, normalmente estético,  ANTES del elemento */
+p::before{
+    content: "#";
+    color: red;
+}
+
+/* permite añadir contenido, normalmente estético,  DESPUÉS del elemento */
+p::after{
+    content: "@";
+    color: blue;
+}
+
+/* permite modificar el estilo de la primera línea del elemento  */
+p::first-line{
+    font-weight: bold;
+}
+
+/* permite modificar el estilo de la primera letra del elemento  */
+p::first-letter{
+    font-size: 2rem;
+}

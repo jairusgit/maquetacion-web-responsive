@@ -1,0 +1,37 @@
+div{
+    margin-top: 10px; /* margen superior */
+    margin-bottom: 8px; /* margen inferior */
+    margin-left: 6px; /* margen izquierdo */
+    margin-right: 5px; /* margen derecho */
+}
+
+div{
+    margin: 10px 5px 8px 6px; /* margen superior, derecho, inferior y izquierdo, en el sentido de las agujas del reloj */
+}
+
+div{
+    margin: 10px 20px; /* margen superior e inferior 10px, margen derecho e izquierdo  20px*/
+}
+
+div{
+    margin: 10px; /* todos los márgenes del div son de 10px */
+}
+
+div{
+    padding-top: 10px; /* padding superior */
+    padding-bottom: 8px; /* padding inferior */
+    padding-left: 6px; /* padding izquierdo */
+    padding-right: 5px; /* padding derecho */
+}
+
+div{
+    padding: 10px 5px 8px 6px; /* padding superior, derecho, inferior y izquierdo, en el sentido de las agujas del reloj */
+}
+
+div{
+    padding: 10px 20px; /* padding superior e inferior 10px, padding derecho e izquierdo  20px*/
+}
+
+div{
+    padding: 10px; /* todos los padding del div son de 10px */
+}

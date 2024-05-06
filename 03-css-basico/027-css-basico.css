@@ -1,0 +1,4 @@
+/*declaración de familia de fuentes (al menos dos siempre) */
+p{
+    font-family: "Times New Roman", serif;  /* utilizará la Times New Roman si está disponible, y si no el grupo serif por defecto. */
+}

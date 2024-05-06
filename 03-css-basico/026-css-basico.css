@@ -1,0 +1,53 @@
+/*text-align */
+h1{
+    text-align: left; /* alineación de texto izquierda */
+    text-align: center; /* alineación de texto centrada */
+    text-align: right; /* alineación de texto derecha */
+    text-align: justify; /* alineación de texto justificada */
+}
+
+/*text decoration */
+h1{
+    text-decoration: underline; /* (subrayado) */
+    text-decoration: overline; /* (línea por encima del texto) */
+    text-decoration: line-through; /*  (tachado) */
+    text-decoration: none; /* (sin decoración) */
+}
+
+/*text transformation */
+h1{
+    text-transform: uppercase; /* (mayúsculas) */
+    text-transform: lowercase; /* (minúsculas) */
+    text-transform: capitalize; /* (primera mayúscula) */
+    text-decoration: none; /* (sin transformación) */
+}
+
+/*text indentation */
+p{
+    text-indent: 50px; /* indentación de la primera línea de un párrafo */
+}
+
+/*letter spacing */
+p{
+    letter-spacing: 3px; /* espacio entre caracteres (admite valores negativos) */
+}
+
+/*line height */
+p{
+    line-height: 1.5; /* espacio entre líneas de texto */
+}
+
+/*text direction*/
+p{
+    direction: rtl; /* escribe el texto de derecha a izquierda */
+}
+
+/*word spacing*/
+p{
+    word-spacing: 10px; /* espacio entre palabras del párrafo */
+}
+
+/*text shadow*/
+p{
+    text-shadow: 4px 2px blue; /*añade una sombra azul al texto de 4px en horizontal y 2px en vertical */
+}

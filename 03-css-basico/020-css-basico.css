@@ -1,0 +1,9 @@
+p:last-child{
+    background: #999999;
+}
+p:first-child{
+    background: #333333;
+}
+p:only-child{
+    background: #666666;
+}

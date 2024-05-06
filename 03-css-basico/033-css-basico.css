@@ -1,0 +1,11 @@
+body{
+    font-size: 16px; /* tamaño de letra por defecto del documento */
+}
+
+div{
+    font-size: 1.5em; /* tamaño calculado de letra equivalente a 24px (16*1,5) */
+}
+
+p{
+    font-size: 0.5rem; /* tamaño calculado de letra equivalente a 12px (24/12), por estar dentro del div en HTML  */
+}

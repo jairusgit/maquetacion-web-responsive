@@ -1,0 +1,9 @@
+p:nth-child(2){
+    background: #999999;
+}
+p:nth-child(odd){
+    background: #333333;
+}
+p:nth-child(even){
+    background: #666666;
+}

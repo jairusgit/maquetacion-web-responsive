@@ -1,0 +1,24 @@
+/* para referirnos al elemento raíz de la página, normalmente  <html> */
+:root{
+    background: red;
+}
+
+/* al pasar por encima con el ratón */
+p:hover{
+    color: red;
+}
+
+/* al activar un enlace o un botón (normalmente, mientras se está pulsando el mismo) */
+:active{
+    color: red;
+}
+
+/* representa un elemento único con un id que coincide con el fragmento de la URL (por ejemplo en https://jairogarciarincon.com#objetivo apuntaría a un elemento con id = objetivo */
+:target{
+    border: 2px solid black;
+}
+
+/* Selecciona cualquier <div> que no contenga contenido */
+div:empty{
+    color: red;
+}

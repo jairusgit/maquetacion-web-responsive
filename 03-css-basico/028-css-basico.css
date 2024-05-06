@@ -1,0 +1,14 @@
+/*declaración de una fuente llamada MiFuente a partir de unos archivos en la carpeta fonts */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/mifuente.eot'); /* IE9  */
+    src: url('../fonts/mifuente.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/mifuente.woff2') format('woff2'), /* Navegadores super actuales */
+    url('../fonts/mifuente.woff') format('woff'), /* Navegadores actuales */
+    url('../fonts/mifuente.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/mifuente.svg#svgFontName') format('svg'); /* iOS antiguo */
+}
+
+p{
+    font-family: "MiFuente", serif;  /* utilizará la MiFuente si está disponible, y si no el grupo serif por defecto. */
+}
