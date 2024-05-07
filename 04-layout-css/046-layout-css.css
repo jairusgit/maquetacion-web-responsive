@@ -1,0 +1,201 @@
+/***** COMUNES ******/
+html{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 2rem auto;
+    font-family: "Verdana", sans-serif;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+.comun{
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.uno{
+    background-color: red;
+}
+
+.dos{
+    background-color: yellow;
+}
+
+.tres{
+    background-color: green;
+}
+
+.cuatro{
+    background-color: blue;
+}
+
+.cinco{
+    background-color: orange;
+}
+
+.seis{
+    background-color: purple;
+}
+
+.siete{
+    background-color: pink;
+}
+
+.ocho{
+    background-color: lightgreen;
+}
+
+
+/* GRID CONTAINER ***************/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.uno {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.dos {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    opacity: 0.5;
+}
+.tres {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+.cuatro {
+    grid-column: 3;
+    grid-row: 3;
+}
+.cinco {
+    grid-column: 2;
+    grid-row: 4;
+}
+.seis {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+/* FLEX DIRECTION ***************/
+
+.flex-direction{
+    display: flex;
+    flex-direction: column; /* en columnas. Se puede invertir con column-reverse */
+}
+
+.flex-direction div{
+    width: 12.5%;
+}
+
+/* FLEX WRAP ***************/
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap; /* si los elementos no caben los baja a la fila siguiente */
+}
+
+.flex-wrap div{
+    width: 20%;
+}
+
+/* FLEX FLOW ***************/
+
+.flex-flow{
+    display: flex;
+    flex-flow: row wrap; /* es un atajo para poner direction y wrap a la vez */
+}
+
+.flex-flow div{
+    width: 20%;
+}
+
+/* JUSTIFY CONTENT ***************/
+
+.justify-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* alinear horizontalmente al centro */
+    /* también puede ser:
+        - flex-end: para alinear al final
+        - space-around: centrado y dejando espacio alrededor
+        - space-between: centrado y dejando espacio entre ellos
+    */
+}
+
+.justify-content div{
+    width: 20%;
+}
+
+/* ALIGN ITEMS ***************/
+
+.align-items{
+    display: flex;
+    height: 400px;
+    padding: 10px;
+    background-color: #CCC;
+    flex-wrap: wrap;
+    align-items: flex-start;  /* alinear al centro */
+    /* también puede ser:
+        - flex-end: para alinear al final
+        - stretch: ajusta la altura de los elementos para que llenen el espacio
+        - baseline: ajusta la línea base de la fuente en todos ellos
+    */
+}
+
+.align-items div{
+    width: 20%;
+}
+
+/*
+.align-items div:first-child{
+    font-size: 3rem;
+}
+*/
+
+/* ALIGN CONTENT ***************/
+
+.align-content{
+    display: flex;
+    height: 400px;
+    padding: 10px;
+    background-color: #CCC;
+    flex-wrap: wrap;
+    align-content: center;  /* centra verticalmente los elementos */
+    /* también puede ser:
+        - space-around: deja espacio vertical alrededor de los elementos
+        - space-between: deja espacio vertical entre los elementos
+        - flex-start: para alinear verticalmente al inicio
+        - flex-end: para alinear verticalmente al final
+    */
+}
+
+.align-content div{
+    width: 20%;
+}
+
+/* CENTRADO PERFECTO ***************/
+
+.centrado-perfecto{
+    display: flex;
+    height: 400px;
+    padding: 10px;
+    background-color: #CCC;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado-perfecto div{
+    width: 20%;
+}
+
