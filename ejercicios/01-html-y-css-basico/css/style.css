@@ -1,0 +1,64 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 1rem auto;
+    color: black;
+    width: 1000px;
+}
+
+header{
+    background-color: #faf2cc;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    color: #555;
+    height: 100px;
+}
+
+header img{
+    width: 100px;
+    margin: 0 1em;
+    float: left;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+}
+
+section{
+    background-color: #d0e9c6;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+article{
+    padding: 1rem;
+}
+
+article:first-of-type{
+    background-color: #ebccd1;
+    margin-bottom: 1rem;
+}
+
+article:last-of-type{
+    background: url("../img/agua.jpg") no-repeat;
+    color: #faf2cc;
+}
+
+article p:first-child{
+    margin-top: 0;
+}
+
+article p:last-child{
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: rgba(124, 172, 213, 0.26);
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+}
