@@ -43,159 +43,78 @@ h1{
     background-color: purple;
 }
 
-.siete{
-    background-color: pink;
-}
-
-.ocho{
-    background-color: lightgreen;
-}
-
 
 /* GRID CONTAINER ***************/
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* también se puede especificar grid-column-gap o grid-row-gap */
+}
+
+
+/* GRID TEMPLATE COLUMNS ***************/
+
+.grid-template-columns {
+    display: grid;
+    grid-template-columns: 15% 35% 50%; /* indica el acnho de cada columna */
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
 }
 
-.uno {
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-.dos {
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-    opacity: 0.5;
-}
-.tres {
-    grid-column: 1;
-    grid-row: 2 / 5;
-}
-.cuatro {
-    grid-column: 3;
-    grid-row: 3;
-}
-.cinco {
-    grid-column: 2;
-    grid-row: 4;
-}
-.seis {
-    grid-column: 3;
-    grid-row: 4;
+
+/* GRID UNIDAD FR ***************/
+/* Divide el espacio en fracciones, adaptando el ancho al espacio disponible */
+
+.grid-unidad-fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* también se puede expresar como repeat(6, 1fr) */
+    grid-gap: 10px;
 }
 
-/* FLEX DIRECTION ***************/
-
-.flex-direction{
-    display: flex;
-    flex-direction: column; /* en columnas. Se puede invertir con column-reverse */
+.grid-unidad-fr-mix {
+    display: grid;
+    grid-template-columns: 2fr repeat(4,1fr) 100px; /* es posible mezclar los valores */
+    grid-gap: 10px;
 }
 
-.flex-direction div{
-    width: 12.5%;
+
+/* GRID AUTO ROWS ***************/
+/* Permite especificar el alto de las filas que se crean cuando el contenido colapsa */
+
+.grid-auto-rows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); /* como mínimo 100px, pero si lo necesita las hará más altas */
+    grid-gap: 10px;
 }
 
-/* FLEX WRAP ***************/
 
-.flex-wrap{
-    display: flex;
-    flex-wrap: wrap; /* si los elementos no caben los baja a la fila siguiente */
+.grid-auto-rows .comun{
+    place-content: center; /* para centrar el contenido */
 }
 
-.flex-wrap div{
-    width: 20%;
+/* GRID LÍNEAS DE CUADRÍCULA ***************/
+/* Permite especificar cuando empieza y acaba cada elemento de la rejilla */
+/* Los líneas son las que se forman en el espacio creado por la rejilla */
+/* grid-column-* hace referencia a las líneas verticales */
+/* grid-row-* hace referencia a las líneas horizontales */
+
+.grid-lineas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); /* como mínimo 100px, pero si lo necesita las hará más altas */
+    grid-gap: 10px;
 }
 
-/* FLEX FLOW ***************/
-
-.flex-flow{
-    display: flex;
-    flex-flow: row wrap; /* es un atajo para poner direction y wrap a la vez */
+.grid-lineas .uno {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    place-content: center; /* para centrar el contenido */
 }
 
-.flex-flow div{
-    width: 20%;
+.grid-lineas .dos {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    place-content: center; /* para centrar el contenido */
 }
-
-/* JUSTIFY CONTENT ***************/
-
-.justify-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  /* alinear horizontalmente al centro */
-    /* también puede ser:
-        - flex-end: para alinear al final
-        - space-around: centrado y dejando espacio alrededor
-        - space-between: centrado y dejando espacio entre ellos
-    */
-}
-
-.justify-content div{
-    width: 20%;
-}
-
-/* ALIGN ITEMS ***************/
-
-.align-items{
-    display: flex;
-    height: 400px;
-    padding: 10px;
-    background-color: #CCC;
-    flex-wrap: wrap;
-    align-items: flex-start;  /* alinear al centro */
-    /* también puede ser:
-        - flex-end: para alinear al final
-        - stretch: ajusta la altura de los elementos para que llenen el espacio
-        - baseline: ajusta la línea base de la fuente en todos ellos
-    */
-}
-
-.align-items div{
-    width: 20%;
-}
-
-/*
-.align-items div:first-child{
-    font-size: 3rem;
-}
-*/
-
-/* ALIGN CONTENT ***************/
-
-.align-content{
-    display: flex;
-    height: 400px;
-    padding: 10px;
-    background-color: #CCC;
-    flex-wrap: wrap;
-    align-content: center;  /* centra verticalmente los elementos */
-    /* también puede ser:
-        - space-around: deja espacio vertical alrededor de los elementos
-        - space-between: deja espacio vertical entre los elementos
-        - flex-start: para alinear verticalmente al inicio
-        - flex-end: para alinear verticalmente al final
-    */
-}
-
-.align-content div{
-    width: 20%;
-}
-
-/* CENTRADO PERFECTO ***************/
-
-.centrado-perfecto{
-    display: flex;
-    height: 400px;
-    padding: 10px;
-    background-color: #CCC;
-    justify-content: center;
-    align-items: center;
-}
-
-.centrado-perfecto div{
-    width: 20%;
-}
-
