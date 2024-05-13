@@ -1,0 +1,49 @@
+/* para dispositivos cuya anchura de pantalla a renderizar sea superior a 768px  */
+@media (min-width: 768px) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos cuya anchura de pantalla (sea o no la que se va a renderizar) sea superior a 768px  */
+@media (min-device-width: 768px) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos cuya anchura de pantalla  a renderizar sea superior a 768px y en orientación horizontal (apaisada) */
+@media (min-width: 768px) and (orientation: landscape) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos cuya anchura máxima de pantalla a renderizar sea inferior a 768px  */
+@media (max-width: 768px) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos cuya anchura de pantalla  a renderizar sea superior a 768px y en orientación vertical */
+@media (min-width: 768px) and (orientation: portrait) {
+    /* Estilos a aplicar */
+}
+
+/* para tvs cuya anchura de pantalla  a renderizar sea superior a 1920px y en orientación horizontal (apaisada) */
+@media tv and (min-width: 1920px) and (orientation: landscape) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos con al menos 256 colores */
+@media all and (min-color-index: 256) {
+    /* Estilos a aplicar */
+}
+
+/* para dispositivos en color */
+@media not monochrome {
+    /* Estilos a aplicar */
+}
+
+/* para pantallas cuya relación de aspecto sea al menos cuadrada */
+@media screen and (min-aspect-ratio: 1/1) {
+    /* Estilos a aplicar */
+}
+
+/* para pantallas cuya relación de aspecto sea de 16/9 */
+@media screen and (device-aspect-ratio: 16/9) {
+    /* Estilos a aplicar */
+}

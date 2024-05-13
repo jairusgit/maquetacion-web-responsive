@@ -1,0 +1,26 @@
+/* Pantallas muy pequeñas o XSmall (de menos de 600px) */
+@media (max-width: 599.98px) {
+    /* Estilos a aplicar */
+    /* No haría falta media-query porque sería nuestro diseño por defecto */
+}
+
+/* Pantallas pequeñas o Small (de más de 600px y hasta 960px) */
+@media (min-width: 600px) and (max-width: 959.98px) {
+    /* Estilos a aplicar */
+}
+
+/* Pantallas medianas o Medium (de más de 960px y hasta 1280px) */
+@media (min-width: 960px) and (max-width: 1279.98px) {
+    /* Estilos a aplicar */
+}
+
+/*Pantallas grandes o Large (de más de 1280px y hasta 1920px) */
+@media (min-width: 1280px) and (max-width: 1919.98px) {
+    /* Estilos a aplicar */
+}
+
+/* Pantallas muy grandes o XLarge (de más de 1920px de ancho) */
+@media (min-width: 1920px) {
+    /* Estilos a aplicar */
+}
+
