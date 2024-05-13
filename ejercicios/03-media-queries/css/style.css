@@ -169,6 +169,16 @@ footer p{
         background-color: #c23131;
         border-color: #ebccd1;
     }
+    /* Modifico el color del borde de la info de la tarjeta */
+    .card-info{
+        border-bottom: 1px solid #dadada;
+    }
+    /* Modifico el color del enlace de la info de la tarjeta */
+    .card-info a,
+    .card-info a:hover,
+    .card-info a:visited{
+        color: white;
+    }
     /* Modifico el color de fondo del footer */
     footer{
         background-color: rgb(62, 117, 164);
